@@ -1,2 +1,2 @@
-FROM chrisbbehrens/jenkinsdocker:v1
+FROM fc8240/jenkinsdocker:v1
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
