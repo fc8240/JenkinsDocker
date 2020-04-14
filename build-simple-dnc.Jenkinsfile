@@ -2,7 +2,7 @@ def dockerImage;
 
 node('docker-ex'){
 	stage('SCM'){
-		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/FeynmanFan/JenkinsDocker']]]);
+		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/fc8240/JenkinsDocker']]]);
 	}
 	stage('build'){
 		docker.withRegistry('https://index.docker.io/v1/', 'dockerhubcreds'){
